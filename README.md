@@ -18,7 +18,7 @@ React Calculator is the solo project in the React and Redux course in Microverse
 
 Full task description on [Microverse's pathwright](https://microverse.pathwright.com/library/fast-track-curriculum/69047/path/step/44896082/) or [Microverse's github](https://github.com/microverseinc/project-react-calculator/blob/master/README.md).
 
-For a live version click [here](https://calculator-phalado.herokuapp.com/).
+For a live version click [here](https://calculator-arslan.herokuapp.com/).
 
 
 ### Built With 
