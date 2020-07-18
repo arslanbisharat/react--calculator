@@ -60,11 +60,6 @@ Everything is working locally and on Heroku.
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
-## Contact
-
-* Raphael Cordeiro - phalado@gmail.com | [Github](https://github.com/phalado)
-
-
 ## Acknowledgements
 
 [Microverse](https://www.microverse.org/).
