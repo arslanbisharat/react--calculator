@@ -1,65 +1,70 @@
-# React-Calculator
-[![License](https://img.shields.io/badge/License-MIT-green.svg)]() [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/Dandush03/capstone-build-linter) 
+<h1 align="center">React Calculator</h1>
 
-
-#### Microverse First React Project
-
-This Stage is the setup stage where I created and deploy to heroku the main configuration
-
----
 
 ## Table of Contents
 
-- [Built With](#Built-With)
-- [Live Link](#Active-Link-to-Website)
-- [Contributing](#Contributing)
-- [Acknowledgments](#Acknowledgments)
-- [License](#License)
-- [Author](#Authors)
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+  - [Milestone One](#milestone-one)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
----
 
-## Built With
+## About The Project
 
-- JavaScript
-- GitHub
-- Vim
-- VSCode
+React Calculator is the solo project in the React and Redux course in Microverse. It consist in using React to build a simple web calculator app.
 
----
+Full task description on [Microverse's pathwright](https://microverse.pathwright.com/library/fast-track-curriculum/69047/path/step/44896082/) or [Microverse's github](https://github.com/microverseinc/project-react-calculator/blob/master/README.md).
 
-## Active Link to Website
+For a live version click [here](https://calculator-phalado.herokuapp.com/).
 
-Check the page in this [Live Link](https://dl-calculator.herokuapp.com/)
 
----
+### Built With 
 
-## Contributing
+* JavaScript ES6
+* React
+* Node
+* Big-JS
+* PropTypes
+* Node.js
 
-Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](./issues/).
+### Milestone One
 
----
+* Initialize new React app
+* Delete any unnecessary file or asset
+* Add prop-types and big-js
+* Deploy to Heroku
 
-## Acknowledgments
+### Milestone Two
 
-- Hat tip to anyone whose code was used
-- Thanks to Microverse for it Support!
+* I created the four components -
+* Button,
+* ButtonPanel, 
+* Display, and App - 
+* rendered the buttons in the ButtonPanel, 
+* which is separated by groups, and rendered the Display and the ButtonPanei in the App.
 
----
+Everything is working locally and on Heroku.
+
+
+<!-- ## Run This App
+
+<p>Just open the dist/index.html file.</p> -->
+
 
 ## License
 
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+Distributed under the MIT License. See `LICENSE` for more information.
 
-## Author
 
-**Daniel Laloush**
+## Contact
 
-- Portfolio: [dlaloush.me](https://dlaloush.me)
-- LinkedIn: [Daniel Laloush](https://www.linkedin.com/in/daniel-laloush-0a7331a9)
-- Github: [@Dandush03](https://github.com/Dandush03)
-- Twitter: [@d_laloush](https://twitter.com/d_laloush)
+* Raphael Cordeiro - phalado@gmail.com | [Github](https://github.com/phalado)
 
-Give a ⭐️ if you like this project!
+
+## Acknowledgements
+
+[Microverse](https://www.microverse.org/).
