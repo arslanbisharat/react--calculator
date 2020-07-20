@@ -1,22 +1,25 @@
-import Big from 'big.js';
+import Big from 'big-js';
 
-const Operate = (a, b, op) => {
-  const tempA = Big(a);
-  const tempB = Big(b);
-  let result;
-  switch (op) {
-    case '+': return tempA.plus(tempB).toString();
-    case '-': return tempA.minus(tempB).toString();
-    case 'x': return tempA.times(tempB).toString();
-    case '÷': return tempA.div(tempB).toString();
-    case '%':
-      result = Big(tempA.div(100).toString());
-      if (tempB !== 0) {
-        result = result.times(tempB).toString();
-      }
-      return result;
-    default: return 'ERROR';
+function operate(numberOne, numberTwo, operation) {
+  let result = '';
+
+  if (operation === '+') {
+    result = (Big(numberOne).plus(numberTwo)).toString();
+  } else if (operation === '-') {
+    result = (Big(numberOne) - Big(numberTwo)).toString();
+  } else if (operation === 'x') {
+    result = (Big(numberOne) * Big(numberTwo)).toString();
+  } else if (operation === '÷') {
+    if (numberTwo === 0) {
+      result = 'nan';
+    } else {
+      result = (Big(numberOne) / Big(numberTwo)).toString();
+    }
+  } else if (operation === '%') {
+    result = (Big(numberOne) * (Big(numberTwo) / 100)).toString();
   }
-};
 
-export default Operate;
+  return result;
+}
+
+export default operate;

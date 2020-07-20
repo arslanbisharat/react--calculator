@@ -1,63 +1,47 @@
-import Operate from './operate';
+import operate from './operate';
 
-const Calculate = (data, buttonName) => {
-  function isNumber(val) {
-    return !!val.match(/[0-9]+/);
+function calculate(calculator, buttonName) {
+  let { total, next, operation } = calculator;
+  const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const symbols = ['%', '÷', 'x', '-', '+'];
+
+  if (numbers.includes(buttonName)) {
+    if (total) {
+      total += buttonName;
+    } else {
+      total = buttonName;
+    }
+  } else if (buttonName === '.') {
+    if (total.indexOf(buttonName) === -1) {
+      total += buttonName;
+    }
+  } else if (buttonName === '+/-') {
+    total = (parseFloat(total) * -1).toString();
+
+    if (next) next = (parseFloat(next) * -1).toString();
+  } else if (buttonName === 'AC') {
+    total = null;
+    next = null;
+    operation = null;
+  } else if (buttonName === '%' && !next) {
+    total = (parseFloat(total) / 100).toString();
+  } else if (symbols.includes(buttonName) && !operation) {
+    next = total;
+    total = null;
+    operation = buttonName;
+  } else if (symbols.includes(buttonName) && operation && (!next || !total)) {
+    operation = buttonName;
+  } else if (symbols.includes(buttonName) && operation) {
+    next = operate(parseFloat(next), parseFloat(total), operation);
+    total = null;
+    operation = buttonName;
+  } else if (total && next && operation) {
+    total = operate(parseFloat(next), parseFloat(total), operation);
+    next = null;
+    operation = null;
   }
-  let total;
-  let next;
-  let operation;
 
-  switch (buttonName) {
-    case 'AC':
-      total = null;
-      next = null;
-      operation = null;
-      break;
+  return { total, next, operation };
+}
 
-    case '+/-':
-      total = Operate(data.total, '-1', 'x');
-      next = Operate(data.total, '-1', 'x');
-      operation = '+/-';
-      break;
-
-    case '=':
-      total = Operate(data.total, data.next, data.operation);
-      next = '0';
-      operation = null;
-      break;
-
-    default:
-
-      if (!data.total) {
-        total = '0';
-        next = '';
-      }
-
-      if (isNumber(buttonName)) {
-        if (data.next !== '0') {
-          next += buttonName;
-        } else {
-          if (data.total !== '0' && !data.operation) {
-            total = '0';
-          }
-          next = buttonName;
-        }
-      } else if (data.total === '0') {
-        total = data.next;
-        next = '0';
-        operation = buttonName;
-      } else {
-        total = Operate(data.total, data.next, buttonName);
-        next = '0';
-        operation = buttonName;
-      }
-  }
-  return {
-    total,
-    next,
-    operation,
-  };
-};
-
-export default Calculate;
+export default calculate;
