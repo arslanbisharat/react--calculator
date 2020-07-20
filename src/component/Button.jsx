@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -7,7 +8,6 @@ export default class Button extends Component {
     this.name = props.name;
     this.value = props.value;
     this.wide = props.wide;
-    /* this.color = props.color; */
 
     if (props.wide) {
       this.width = '50%';
