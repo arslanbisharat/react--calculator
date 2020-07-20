@@ -19,11 +19,11 @@
 
 ## About The Project
 
-React Calculator is the solo project in the React and Redux course in Microverse. It consist in using React to build a simple web calculator app.
+React Calculator is the solo project in the React and Redux course in Microverse. It consists of using React to build a simple web calculator app.
 
 Full task description on [Microverse's pathwright](https://microverse.pathwright.com/library/fast-track-curriculum/69047/path/step/44896082/) or [Microverse's github](https://github.com/microverseinc/project-react-calculator/blob/master/README.md).
 
-For a live version click [here](http://192.168.10.2:3000).
+For a live version click [here](http://192.168.10.2:3000/).
 
 
 ### Built With 
@@ -67,7 +67,8 @@ For a live version click [here](http://192.168.10.2:3000).
 
 ### Milestone Five
 
-*Coming soon*
+* Implemented *calculate* to App, so the Calculator is operational.
+* Some minor changes in the *ButtonPanel*, *Button* and *Display* components required by the client.
 
 
 ## Run This App
@@ -86,10 +87,14 @@ A tab will be opened in the browser.
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
+## Author
 
-## Contact
+**Arslan Bisharat**
 
-* Arslan Bisharat - thearslan380@gmail.com | [Github](https://github.com/arslanbisharat)
+
+- Github: [@githubhandle](https://github.com/arslanbisharat)
+- Twitter: [@twitterhandle](https://twitter.com/arslan_bisharat-2020bb156)
+- Linkedin: [linkedin](https://www.linkedin.com/in/muhammad-arslan-2020bb156)
 
 
 ## Acknowledgements
