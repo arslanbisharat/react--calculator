@@ -25,13 +25,13 @@ $c-last-btn: #ffa500;
 }
 
 .group-container {
-  >div {
+  > div {
     align-items: stretch;
     display: flex;
     height: 100px;
     width: 100%;
 
-    >:last-child {
+    > :last-child {
       background-color: $c-last-btn;
     }
   }
