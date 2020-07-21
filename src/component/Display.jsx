@@ -9,7 +9,7 @@ export default class Display extends Component {
 
   render() {
     return (
-      <div>
+      <div className="display">
         <h2>{this.result}</h2>
       </div>
     );

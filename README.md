@@ -7,6 +7,11 @@
 - [About The Project](#about-the-project)
   - [Built With](#built-with)
   - [Milestone One](#milestone-one)
+  - [Milestone Two](#milestone-two)
+  - [Milestone Three](#milestone-three)
+  - [Milestone Four](#milestone-four)
+  - [Milestone Five](#milestone-five)
+- [Run This App](#run-this-app)
 - [License](#license)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
@@ -18,7 +23,8 @@ React Calculator is the solo project in the React and Redux course in Microverse
 
 Full task description on [Microverse's pathwright](https://microverse.pathwright.com/library/fast-track-curriculum/69047/path/step/44896082/) or [Microverse's github](https://github.com/microverseinc/project-react-calculator/blob/master/README.md).
 
-For a live version click [here](https://loving-curran-be09ab.netlify.app/)
+For a live version click [here](http://192.168.10.2:3000).
+
 
 ### Built With 
 
@@ -37,26 +43,51 @@ For a live version click [here](https://loving-curran-be09ab.netlify.app/)
 * Add prop-types and big-js
 * Deploy to Heroku
 
+
 ### Milestone Two
 
-* I created the four components -
-* Button,
-* ButtonPanel, 
-* Display, and App - 
-* rendered the buttons in the ButtonPanel, 
-* which is separated by groups, and rendered the Display and the ButtonPanei in the App.
-
-Everything is working locally and on Heroku.
+* Created a *components* folder and, inside, created a file for each of the React components
+* **Button.js** creates each button.
+* **Display.js** shows the output
+* **ButtonPanel.js** render the buttons in horizontal groups
+* **App.js** is rendering the *ButtonPanel* and the *Display*
 
 
-<!-- ## Run This App
+### Milestone Three
 
-<p>Just open the dist/index.html file.</p> -->
+* Styling
+
+
+### Milestone Four
+
+*Coming soon*
+
+
+### Milestone Five
+
+*Coming soon*
+
+
+## Run This App
+
+To run this app you must:
+
+* Download the project
+* Open the terminal
+* Navigate to the project's folder
+* Run *npm start*
+
+A tab will be opened in the browser.
 
 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+
+## Contact
+
+* Arslan Bisharat - thearslan380@gmail.com | [Github](https://github.com/arslanbisharat)
 
 
 ## Acknowledgements

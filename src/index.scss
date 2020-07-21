@@ -1,5 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -7,17 +10,16 @@ body {
     'Roboto',
     'Oxygen',
     'Ubuntu',
-    'Cantarell',
+    'Cantarell', 
     'Fira Sans',
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  margin: 0;
+  }
 
 code {
-  font-family:
+  font-family: 
     source-code-pro,
     Menlo,
     Monaco,
