@@ -1,6 +1,6 @@
 <h1 align="center">React Calculator</h1>
 
-
+![ScreenShot](sc.png)
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
